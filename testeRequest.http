@@ -1,0 +1,25 @@
+GET http://localhost:3333/locadora/veiculo
+
+###
+
+POST http://localhost:3333/locadora/veiculo
+Content-Type: application/json
+
+{
+  "nome": "SpaceFox",
+  "modelo": "Offroad",
+  "ano": "2015",
+  "velMax": "220"
+}
+
+###
+
+POST http://localhost:3333/locadora/veiculo
+Content-Type: application/json
+
+{
+  "nome": "Saveiro",
+  "modelo": "GTS-turbo",
+  "ano": "1985",
+  "velMax": "240"
+}
