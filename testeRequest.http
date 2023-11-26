@@ -1,25 +1,52 @@
-GET http://localhost:3333/locadora/veiculo
+GET http://localhost:3333/locadora/maquinas
 
 ###
 
-POST http://localhost:3333/locadora/veiculo
+POST http://localhost:3333/locadora/maquinas
 Content-Type: application/json
 
 {
-  "nome": "SpaceFox",
-  "modelo": "Offroad",
-  "ano": "2015",
-  "velMax": "220"
+  "type": "PC",
+  "ram": "8",
+  "hdd": "500",
+  "cpu": "2"
 }
 
 ###
 
-POST http://localhost:3333/locadora/veiculo
+POST http://localhost:3333/locadora/maquinas
+Content-Type: application/json
+
+
+{
+  "type": "Server",
+  "ram": "32",
+  "hdd": "2000",
+  "cpu": "10"
+}
+
+###
+
+POST http://localhost:3333/locadora/maquinas
+Content-Type: application/json
+
+
+{
+  "type": "Server",
+  "ram": "8",
+  "hdd": "500",
+  "cpu": "2"
+}
+
+
+###
+
+PUT http://localhost:3333/locadora/maquinas/0
 Content-Type: application/json
 
 {
-  "nome": "Saveiro",
-  "modelo": "GTS-turbo",
-  "ano": "1985",
-  "velMax": "240"
+  "type": "Server",
+  "ram": "16",
+  "hdd": "500",
+  "cpu": "10"
 }

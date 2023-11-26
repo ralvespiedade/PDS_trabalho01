@@ -1,11 +1,12 @@
 const router = require('express').Router()
-const controllerVeiculo = require('../controllers/veiculo')
+const controllerComputador = require('../controllers/computador')
 
 
 
 
-router.get('/veiculo', controllerVeiculo.get)
-router.post('/veiculo', controllerVeiculo.post)
+router.get('/maquinas', controllerComputador.get)
+router.post('/maquinas', controllerComputador.post)
+router.put('/maquinas/:id', controllerComputador.put)
 
 
 export default router
